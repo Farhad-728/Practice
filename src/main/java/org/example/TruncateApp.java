@@ -1,7 +1,5 @@
 package org.example;
 
-import java.util.Scanner;
-
 public class TruncateApp {
 
     public static String truncate(String s, int k) {
