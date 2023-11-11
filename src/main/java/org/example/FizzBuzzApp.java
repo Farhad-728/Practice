@@ -28,8 +28,6 @@ public class FizzBuzzApp {
         int n = 15;
         List<String> result = fizzBuzz(n);
 
-        for (String s : result) {
-            System.out.print(s + ",");
-        }
+        System.out.print(result);
     }
 }
