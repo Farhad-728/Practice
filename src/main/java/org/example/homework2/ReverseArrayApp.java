@@ -1,9 +1,5 @@
 package org.example.homework2;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class ReverseArrayApp {
     public static void reverseArray(String[] arr) {
 
@@ -23,7 +19,7 @@ public class ReverseArrayApp {
     }
 
     public static void main(String[] args) {
-        String[] array = {"Adil", "Beshir", "Subhan", "Derya"};
+        String[] array = {"Adil", "Beshir", "Subhan", "Derya", "Farhad"};
 
         reverseArray(array);
 
