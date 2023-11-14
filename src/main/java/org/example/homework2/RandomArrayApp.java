@@ -1,8 +1,5 @@
 package org.example.homework2;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 
 public class RandomArrayApp {
     public static void main(String[] args) {
@@ -24,8 +21,8 @@ public class RandomArrayApp {
             System.out.print(value1 + " ");
         }
         System.out.println();
-//        for (int value2 : winnerTickets) {
-//            System.out.print(value2 + " ");
-//        }
+        for (int value2 : winnerTickets) {
+            System.out.print(value2 + " ");
+        }
     }
 }
