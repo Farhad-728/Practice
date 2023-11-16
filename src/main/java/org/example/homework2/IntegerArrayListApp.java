@@ -2,7 +2,7 @@ package org.example.homework2;
 
 import java.util.ArrayList;
 
-public class ArrayListApp {
+public class IntegerArrayListApp {
     public static void main(String[] args) {
         ArrayList<Integer> numbers = new ArrayList<>();
         numbers.add(22);
