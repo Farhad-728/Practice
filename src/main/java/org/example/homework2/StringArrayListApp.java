@@ -2,7 +2,6 @@ package org.example.homework2;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 
 public class StringArrayListApp {
     public static void main(String[] args) {
