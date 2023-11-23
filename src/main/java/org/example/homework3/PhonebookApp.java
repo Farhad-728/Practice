@@ -7,8 +7,8 @@ public class PhonebookApp {
     public static void main(String[] args) {
         PhonebookApp pb = new PhonebookApp();
         pb.addContacts();
-        pb.removeContacts();
-        System.out.println("Contacts found:" + " " + pb.findContacts());
+        pb.removeContacts("Nizami", 502690000);
+        System.out.println("Contacts found:" + " " + pb.findContacts("Samir"));
         pb.printContacts();
 
     }
@@ -24,12 +24,12 @@ public class PhonebookApp {
         contacts.put("Orkhan", 552356282);
     }
 
-    private void removeContacts() {
-        contacts.remove("Nizami");
+    private void removeContacts(String name, int number) {
+        contacts.remove(name, number);
     }
 
-    private boolean findContacts() {
-        if (contacts.containsKey("Qara")) {
+    private boolean findContacts(String name) {
+        if (contacts.containsKey(name)) {
             return true;
         } else {
             return false;
