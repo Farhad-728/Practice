@@ -6,36 +6,34 @@ import java.util.Map;
 public class PhonebookApp {
     public static void main(String[] args) {
         PhonebookApp pb = new PhonebookApp();
-        pb.addContacts();
-        pb.removeContacts("Nizami", 502690000);
-        System.out.println("Contacts found:" + " " + pb.findContacts("Samir"));
+        pb.addContacts("Samir", 505992688);
+        pb.addContacts("Farhad", 507287282);
+        pb.addContacts("Nizami", 504510052);
+        pb.addContacts("Orkhan", 512356185);
+        pb.addContacts("Murad", 512356181);
+        pb.removeContacts("Nizami");
+        pb.findContacts("Samir");
         pb.printContacts();
 
     }
 
     HashMap<String, Integer> contacts = new HashMap<>(30);
 
-    private void addContacts() {
-        contacts.put("Samir", 505050500);
-        contacts.put("Farhad", 502000000);
-        contacts.put("Ilgar", 512100000);
-        contacts.put("Nizami", 502690000);
-        contacts.put("Murad", 552356161);
-        contacts.put("Orkhan", 552356282);
+    private void addContacts(String name, int number) {
+        contacts.put(name, number);
     }
 
-    private void removeContacts(String name, int number) {
-        contacts.remove(name, number);
+    private void removeContacts(String name) {
+        contacts.remove(name);
     }
 
-    private boolean findContacts(String name) {
+    private void findContacts(String name) {
         if (contacts.containsKey(name)) {
-            return true;
+            System.out.println("Contact found");
         } else {
-            return false;
+            System.out.println("Contact not found");
         }
     }
-
     private void printContacts() {
 
         for (Map.Entry<String, Integer> contact : contacts.entrySet()) {
