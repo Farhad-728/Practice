@@ -29,7 +29,7 @@ public class PhonebookApp {
 
     private void findContacts(String name) {
         if (contacts.containsKey(name)) {
-            System.out.println("Contact found");
+            System.out.println("Contact found: " + " " + contacts.get(name));
         } else {
             System.out.println("Contact not found");
         }
