@@ -2,8 +2,6 @@ package org.example.homework3;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.stream.Collectors;
-
 public class WordFrequencyCounterApp {
     public static void main(String[] args) {
         String inputParagraf = "Java is a programming language. Java is used for web development and software engineering.";
