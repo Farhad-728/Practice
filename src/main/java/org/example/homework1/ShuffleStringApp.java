@@ -1,4 +1,4 @@
-package org.example;
+package org.example.homework1;
 
 public class ShuffleStringApp {
     public static String restoreString(String s, int[] indices) {

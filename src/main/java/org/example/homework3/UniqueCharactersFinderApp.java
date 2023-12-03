@@ -1,5 +1,8 @@
 package org.example.homework3;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class UniqueCharactersFinderApp {
 
     public static void main(String[] args) {
@@ -9,14 +12,10 @@ public class UniqueCharactersFinderApp {
     }
 
     public static void uniqueCharacters(String test) {
-        String word = "";
-        for (int i = 0; i < test.length(); i++) {
-            if (word.indexOf(test.charAt(i)) == -1) {
-                word = word + test.charAt(i);
-
-            }
+        Set<Character> uniqueChar = new HashSet<>();
+        for (char ch : test.toCharArray()) {
+            uniqueChar.add(ch);
         }
-        System.out.println(word);
-
+        System.out.println(uniqueChar);
     }
 }

@@ -6,28 +6,28 @@ import java.util.Map;
 public class PhonebookApp {
     public static void main(String[] args) {
         PhonebookApp pb = new PhonebookApp();
-        pb.addContacts("Samir", 505992688);
-        pb.addContacts("Farhad", 507287282);
-        pb.addContacts("Nizami", 504510052);
-        pb.addContacts("Orkhan", 512356185);
-        pb.addContacts("Murad", 512356181);
-        pb.removeContacts("Nizami");
-        pb.findContacts("Samir");
+        pb.addContact("Samir", 505992688);
+        pb.addContact("Farhad", 507287282);
+        pb.addContact("Nizami", 504510052);
+        pb.addContact("Orkhan", 512356185);
+        pb.addContact("Murad", 512356181);
+        pb.removeContact("Nizami");
+        pb.findContact("Samir");
         pb.printContacts();
 
     }
 
     HashMap<String, Integer> contacts = new HashMap<>(30);
 
-    private void addContacts(String name, int number) {
+    private void addContact(String name, int number) {
         contacts.put(name, number);
     }
 
-    private void removeContacts(String name) {
+    private void removeContact(String name) {
         contacts.remove(name);
     }
 
-    private void findContacts(String name) {
+    private void findContact(String name) {
         if (contacts.containsKey(name)) {
             System.out.println("Contact found: " + " " + contacts.get(name));
         } else {

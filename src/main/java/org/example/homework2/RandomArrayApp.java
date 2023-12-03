@@ -11,9 +11,11 @@ public class RandomArrayApp {
         }
 
         int[] winnerTickets = new int[length/2];
-        for (int i = 1; i < winnerTickets.length; i++) {
+        for (int i = 1, c = 0; i < ticketNums.length; i++) {
+
             if (i % 2 == 0) {
-                winnerTickets[i] = ticketNums[i];
+                winnerTickets[c] = ticketNums[i];
+                c++;
             }
         }
 

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.homework1;
 
 public class ReverseStringApp {
     public static void reverseString(char[] s) {

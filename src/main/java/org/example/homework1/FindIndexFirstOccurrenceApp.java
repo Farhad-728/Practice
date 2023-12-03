@@ -1,4 +1,4 @@
-package org.example;
+package org.example.homework1;
 
 public class FindIndexFirstOccurrenceApp {
 
@@ -17,7 +17,7 @@ public class FindIndexFirstOccurrenceApp {
 
     public static void main(String[] args) {
         String haystack = "leetcode";
-        String needle = "leeto";
+        String needle = "code";
         int result = strStr(haystack, needle);
         System.out.println(result);
     }

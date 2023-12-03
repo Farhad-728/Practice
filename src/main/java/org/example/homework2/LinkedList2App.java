@@ -14,9 +14,9 @@ public class LinkedList2App {
 
         System.out.println("Original numbers: " + nums);
 
-        List<Integer> subList = nums.subList(1, 2);
+        List<Integer> subList = nums.subList(1, 3);
 
-//        nums.subList(1, 3);
+        nums.subList(1, 3);
 
         System.out.println("SubList numbers: " + subList);
     }

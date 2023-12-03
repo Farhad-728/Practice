@@ -20,12 +20,8 @@ public class IntegerArrayListApp {
         } else {
             System.out.println("2. " + "The ArrayList does not have 5 elements.");
         }
-        for (int n = 0; n < numbers.size(); n++) {
-            if (numbers.contains(8)) {
-                System.out.println("3. Index of element 8: " + numbers.indexOf(8));
-                break;
-            }
-        }
+
+        System.out.println("3. Index of element 8: " + numbers.indexOf(8));
 
         numbers.removeIf(even -> even % 2 == 0);
         numbers.set(0, 0);

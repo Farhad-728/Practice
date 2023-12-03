@@ -1,6 +1,7 @@
 package org.example.homework2;
 
 import java.util.LinkedList;
+import java.util.List;
 
 public class LinkedList1App {
     public static void main(String[] args) {
@@ -18,10 +19,12 @@ public class LinkedList1App {
         System.out.println("1. " + numbers);
 
         numbers.remove(9);
+        numbers.removeLast();
 
         numbers.set(0, 77);
 
-        numbers.get(5);
+        numbers.get(numbers.size() / 2);
+
 
         System.out.println("2. " + numbers);
     }

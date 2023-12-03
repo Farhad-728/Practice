@@ -1,8 +1,8 @@
-package org.example;
+package org.example.homework1;
 
 public class ValidPalindromeApp {
     public static boolean isPalindrome(String s) {
-        s = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+        s = s.replaceAll("[^a-z0-9]", "").toLowerCase();
 
         int left = 0;
         int right = s.length() - 1;
