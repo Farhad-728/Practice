@@ -6,8 +6,6 @@ import java.util.Iterator;
 import java.util.List;
 
 public class EventScheduler {
-    private static LocalDate currentTime;
-
     public static void main(String[] args) {
 
         createEvents("Warning", LocalDate.of(2023,9, 9), LocalDate.of(2023, 10, 10));
