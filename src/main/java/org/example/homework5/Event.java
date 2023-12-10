@@ -1,11 +1,14 @@
 package org.example.homework5;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 public class Event {
     private String name;
-    private long creationTime;
-    private long expireTime;
+    private LocalDate creationTime;
+    private LocalDate expireTime;
 
-    public Event(String name, long creationTime, long expireTime) {
+    public Event(String name, LocalDate creationTime, LocalDate expireTime) {
         this.name = name;
         this.creationTime = creationTime;
         this.expireTime = expireTime;
@@ -15,11 +18,11 @@ public class Event {
         return name;
     }
 
-    public long getCreationTime() {
+    public LocalDate getCreationTime() {
         return creationTime;
     }
 
-    public long getExpireTime() {
+    public LocalDate getExpireTime() {
         return expireTime;
     }
 }
