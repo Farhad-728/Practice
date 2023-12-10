@@ -1,8 +1,7 @@
 package org.example.homework5;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.Month;
+
 import java.time.Period;
 
 public class AgeCalculatorApp {

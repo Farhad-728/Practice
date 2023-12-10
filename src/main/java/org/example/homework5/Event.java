@@ -1,7 +1,6 @@
 package org.example.homework5;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 public class Event {
     private String name;
