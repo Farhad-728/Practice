@@ -17,6 +17,6 @@ public class SumsDifference {
     public static void main(String[] args) {
         int n = 10;
         int m = 3;
-        differenceOfSums(10, 3);
+        differenceOfSums(n,m);
     }
 }
