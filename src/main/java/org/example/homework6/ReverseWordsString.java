@@ -1,7 +1,5 @@
 package org.example.homework6;
 
-import java.util.Arrays;
-
 public class ReverseWordsString {
     public static String reverseWords(String s) {
         String[] words = s.split(" ");
@@ -34,7 +32,7 @@ public class ReverseWordsString {
 
     public static void main(String[] args) {
         String s = "Let's take LeetCode contest";
-        String newWord = reverseWords(s);
-        System.out.println(newWord);
+        reverseWords(s);
+
     }
 }
